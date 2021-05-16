@@ -12,8 +12,13 @@
     
     <!-- define the dependency -->
  	<bean id="myCoach"
- 		class="br.com.rf.springdemo.TrackCoach">	 		
+ 		class="br.com.rf.springdemo.BasebacllCoach">	 		
  	</bean>
+ 	
+ 	 <bean id="myLoggerConfig" class="br.com.rf.springdemo.MyLoggerConfig" init-method="initLogger">
+    	<property name="rootLoggerLevel" value="FINE" />
+    	<property name="printedLoggerLevel" value="FINE"/>
+    </bean>
 
 </beans>
 
