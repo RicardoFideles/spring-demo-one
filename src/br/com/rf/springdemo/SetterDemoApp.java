@@ -2,8 +2,8 @@ package br.com.rf.springdemo;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class HelloSpringApp {
-
+public class SetterDemoApp {
+	
 	public static void main(String[] args) {
 		
 		// load the spring configuration file
@@ -12,7 +12,7 @@ public class HelloSpringApp {
 			
 		// retrieve bean from spring Container
 		
-		Coach theCoach = context.getBean("myCoach", Coach.class);
+		Coach theCoach = context.getBean("myCrikectCoach", Coach.class);
 		
 		// call methods on the bean
 		
@@ -22,7 +22,7 @@ public class HelloSpringApp {
 		// Close the context
 		
 		context.close();
-		
 	}
+
 
 }
